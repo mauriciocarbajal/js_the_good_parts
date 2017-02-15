@@ -1,5 +1,5 @@
 # JavaScript: The Good Parts
-Here you will find many examples shown on the book.  
+Here you will find many examples shown in the book.  
 
 Chapter one (Good Parts) is just an introduction without practical examples.  
 Chapter two (Grammar) specifies the syntax of the language, so there are not many examples either.  
