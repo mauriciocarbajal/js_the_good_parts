@@ -28,25 +28,38 @@ var flight = {
 //Retrieval
 console.log("");
 console.log("--- Retrieval");
-console.log(stooge["first-name"]);    	// "Joe"
-console.log(flight.departure.IATA);    	// "SYD"
-console.log(stooge["middle-name"]);		//undefined
-console.log(flight.status);				//undefined
-console.log(stooge["FIRST-NAME"]);		//undefined
+console.log(stooge["first-name"]);
+	// "Joe"
+console.log(flight.departure.IATA);
+	// "SYD"
+console.log(stooge["middle-name"]);
+	//undefined
+console.log(flight.status);
+	//undefined
+console.log(stooge["FIRST-NAME"]);
+	//undefined
 
-console.log(stooge["middle-name"] || "(none)");		//none
-console.log(flight.status || "unknown");			//unknown
+console.log(stooge["middle-name"] || "(none)");
+	//none
+console.log(flight.status || "unknown");
+	//unknown
 
-console.log(flight.equipment);									//undefined
-//console.log(flight.equipment.model);							//would throw "TypeError"
-console.log(flight.equipment && flight.equipment.model);		//undefined
+console.log(flight.equipment);
+	//undefined
+//console.log(flight.equipment.model);
+	//would throw "TypeError"
+console.log(flight.equipment && flight.equipment.model);
+	//undefined
 
 
 //Update
 console.log("");
 console.log("--- Update");
-stooge['first-name'] = 'Jerome';		//updated to Jerome
-stooge['middle-name'] = 'Lester';		//Created
+stooge['first-name'] = 'Jerome';
+	//updated to Jerome
+stooge['middle-name'] = 'Lester';
+	//new key created
+
 stooge.nickname = 'Curly';
 flight.equipment = {
     model: 'Boeing 777'
@@ -61,7 +74,8 @@ console.log("");
 console.log("--- Reference");
 var x = stooge;
 x.nickname = 'Curly';
-console.log(stooge);			//shows 'nickname' among the other keys
+console.log(stooge);
+	//shows 'nickname' among the other keys
 
 var a = {}, b = {}, c = {};
     // a, b, and c each refer to a
@@ -89,18 +103,22 @@ if (typeof Object.create != 'function'){
 console.log("");
 console.log("--- Reference");
 var another_stooge = Object.create(stooge);
-console.log(another_stooge);	//prototype chain: another_stooge <-- stooge <-- Object.prototype
-console.log(another_stooge['first-name']);	//Delegation: It moves up in the prototype chain until finds property (and if not, returns undefined)
+console.log(another_stooge);
+	//prototype chain: another_stooge <-- stooge <-- Object.prototype
+console.log(another_stooge['first-name']);
+	//Delegation: it moves up in the prototype chain until finds property (and if not, returns undefined)
 
 //Changing an object don't change its prototype
 another_stooge['first-name'] = 'Harry';
 another_stooge['middle-name'] = 'Moses';
 another_stooge.nickname = 'Moe';
-console.log(stooge);	//doesn't change
+console.log(stooge);
+	//doesn't change
 
 //Changing a prototype DO change their objects
 stooge.profession = 'actor';
-console.log(another_stooge.profession);		//actor
+console.log(another_stooge.profession);
+	//actor
 
 
 
@@ -156,10 +174,11 @@ for (i = 0; i < properties.length; i += 1) {
 //Delete
 console.log("");
 console.log("--- Delete");
-console.log(another_stooge.nickname);	//from object ('Moe')
+console.log(another_stooge.nickname);
+	//'Moe' (from object)
 delete another_stooge.nickname;
-console.log(another_stooge.nickname);	//from prototype ('Curly')
-
+console.log(another_stooge.nickname);
+	//'Curly' (from prototype)
 
 
 //Global Abatement
