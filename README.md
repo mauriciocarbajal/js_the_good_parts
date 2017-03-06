@@ -4,7 +4,7 @@ Here you will find many examples shown in the book.
 Chapter one (Good Parts) is just an introduction without practical examples.  
 Chapter two (Grammar) specifies the syntax of the language, so there are not many examples either.  
 
-This repo contains examples from chapter three and so on, as well as some -ideally short and concrete- stuff I want to try out.  
+This repo contains examples from chapter three to ten, as well as some -ideally short and concrete- stuff I want to try out.  
 
 Chapter three: Objects  
 Chapter four: Functions  
