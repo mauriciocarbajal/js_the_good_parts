@@ -1,4 +1,4 @@
-output('***** CHAPTER 5 - INHERITANCE | Examples from book "JS -The Good Parts" *****');
+output('***** CHAPTER 5 - INHERITANCE | Examples from the book "JS - The Good Parts" *****');
 
 
 output("");
@@ -297,6 +297,7 @@ var met = function(a){
 };
 ev.on('test',met,[100]);
 ev.fire('test');
+
 
 
 

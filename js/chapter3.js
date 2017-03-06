@@ -1,4 +1,4 @@
-output('***** CHAPTER 3 - OBJECTS | Examples from book "JS -The Good Parts" *****');
+output('***** CHAPTER 3 - OBJECTS | Examples from the book "JS - The Good Parts" *****');
 
 
 //Literal declaration of js object (using JSON)

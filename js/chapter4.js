@@ -1,4 +1,4 @@
-output('***** CHAPTER 4 - FUNCTIONS | Examples from book "JS -The Good Parts" *****');
+output('***** CHAPTER 4 - FUNCTIONS | Examples from the book "JS - The Good Parts" *****');
 
 
 output("");
